@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module name="SkeletonPython" type="runtime" >
+
+    <tag name="inputs">
+        <tag name="mex_url"      type="system-input" />
+        <tag name="bisque_token" type="system-input" />
+        <tag name="image_url" type="image">
+        </tag>
+    </tag>
+
+    <tag name="outputs">
+        <tag name="OutputImage" type="image">
+            <template>
+                <tag name="label" value="Detection summary" />
+            </template>
+        </tag>
+    </tag>
+</module>

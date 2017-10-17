@@ -1,0 +1,32 @@
+DEBUG:bq.modules:SkeletonPython is called with the following arguments
+DEBUG:bq.modules:sysargv : ['SkeletonPython.py', 'http://bisque-dev.planteome.org/module_service/mex/00-yKsqQZxYvFNLrLRuCoyGYo', 'admin:00-yKsqQZxYvFNLrLRuCoyGYo', 'http://bisque-dev.planteome.org/data_service/00-Ze92ze9J3N23i9YeGtvjf7', 'resnet', 'True']
+
+
+DEBUG:bq.modules:options {'pwd': None, 'token': None, 'image_url': None, 'user': None, 'mexURL': None, 'root': None, 'stagingPath': None, 'modulePath': None}
+DEBUG:bq.modules:
+
+PARAMS : ['http://bisque-dev.planteome.org/module_service/mex/00-yKsqQZxYvFNLrLRuCoyGYo', 'admin:00-yKsqQZxYvFNLrLRuCoyGYo', 'http://bisque-dev.planteome.org/data_service/00-Ze92ze9J3N23i9YeGtvjf7', 'resnet', 'True'] 
+
+ Options: {'pwd': None, 'token': 'admin:00-yKsqQZxYvFNLrLRuCoyGYo', 'image_url': None, 'user': None, 'mexURL': 'http://bisque-dev.planteome.org/module_service/mex/00-yKsqQZxYvFNLrLRuCoyGYo', 'root': None, 'stagingPath': '', 'modulePath': None}
+DEBUG:bqapi.comm:fetchxml http://bisque-dev.planteome.org/services 
+DEBUG:bqapi.comm:get: http://bisque-dev.planteome.org/services req  header={'Content-Type': 'text/xml', 'Accept': 'text/xml'}
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): bisque-dev.planteome.org
+DEBUG:requests.packages.urllib3.connectionpool:"GET /services HTTP/1.1" 200 1735
+DEBUG:bqapi.comm:fetchxml http://bisque-dev.planteome.org/module_service/mex/00-yKsqQZxYvFNLrLRuCoyGYo?view=deep 
+DEBUG:bqapi.comm:get: http://bisque-dev.planteome.org/module_service/mex/00-yKsqQZxYvFNLrLRuCoyGYo?view=deep req  header={'Content-Type': 'text/xml', 'Accept': 'text/xml'}
+DEBUG:requests.packages.urllib3.connectionpool:"GET /module_service/mex/00-yKsqQZxYvFNLrLRuCoyGYo?view=deep HTTP/1.1" 200 2939
+DEBUG:bq.modules:Set options with image_url as http://bisque-dev.planteome.org/data_service/00-Ze92ze9J3N23i9YeGtvjf7
+DEBUG:bq.modules:Set options with deepNetworkChoice as resnet
+DEBUG:bq.modules:Set options with segmentImage as True
+DEBUG:bq.modules:SkeletonPython: image URL: http://bisque-dev.planteome.org/data_service/00-Ze92ze9J3N23i9YeGtvjf7, mexURL: http://bisque-dev.planteome.org/module_service/mex/00-yKsqQZxYvFNLrLRuCoyGYo, stagingPath: , token: admin:00-yKsqQZxYvFNLrLRuCoyGYo
+DEBUG:bqapi.comm:fetchxml http://bisque-dev.planteome.org/module_service/mex/00-yKsqQZxYvFNLrLRuCoyGYo?view=deep 
+DEBUG:bqapi.comm:get: http://bisque-dev.planteome.org/module_service/mex/00-yKsqQZxYvFNLrLRuCoyGYo?view=deep req  header={'Content-Type': 'text/xml', 'Accept': 'text/xml'}
+DEBUG:requests.packages.urllib3.connectionpool:"GET /module_service/mex/00-yKsqQZxYvFNLrLRuCoyGYo?view=deep HTTP/1.1" 200 2939
+DEBUG:bqapi.comm:postxml http://bisque-dev.planteome.org/module_service/mex/00-yKsqQZxYvFNLrLRuCoyGYo  content <mex uri="http://bisque-dev.planteome.org/module_service/mex/00-yKsqQZxYvFNLrLRuCoyGYo" value="Returning results..."/> 
+DEBUG:bqapi.comm:POST http://bisque-dev.planteome.org/module_service/mex/00-yKsqQZxYvFNLrLRuCoyGYo?view=short req {'Content-Type': 'text/xml', 'Accept': 'text/xml'}
+DEBUG:requests.packages.urllib3.connectionpool:"POST /module_service/mex/00-yKsqQZxYvFNLrLRuCoyGYo?view=short HTTP/1.1" 200 429
+DEBUG:bqapi.comm:postxml http://bisque-dev.planteome.org/module_service/mex/00-yKsqQZxYvFNLrLRuCoyGYo  content <mex uri="http://bisque-dev.planteome.org/module_service/mex/00-yKsqQZxYvFNLrLRuCoyGYo" value="FINISHED"><tag name="outputs"><tag name="OutputImage" value="http://bisque-dev.planteome.org/data_service/00-Ze92ze9J3N23i9YeGtvjf7"/></tag></mex> 
+DEBUG:bqapi.comm:POST http://bisque-dev.planteome.org/module_service/mex/00-yKsqQZxYvFNLrLRuCoyGYo?view=short req {'Content-Type': 'text/xml', 'Accept': 'text/xml'}
+DEBUG:requests.packages.urllib3.connectionpool:"POST /module_service/mex/00-yKsqQZxYvFNLrLRuCoyGYo?view=short HTTP/1.1" 200 417
+DEBUG:bq.modules:FINISHED
+DEBUG_INIT
