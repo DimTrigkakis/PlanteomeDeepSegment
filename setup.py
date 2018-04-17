@@ -6,7 +6,7 @@ from bq.setup.bisque_setup import getanswer
 
 def setup(params, *args, **kw):
     
-    return python_setup('SkeletonPython.py', params=params)
+    return python_setup('PlanteomeDeepSegment.py', params=params)
     
 if __name__ =="__main__":
     

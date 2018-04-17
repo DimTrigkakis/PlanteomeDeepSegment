@@ -1,0 +1,2 @@
+/home/dimitris/Bisque/modules/PlanteomeDeepSegment/penv/bin/activate
+pytorch
