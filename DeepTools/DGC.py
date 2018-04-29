@@ -238,9 +238,9 @@ class GraphCutter(object):
         # log.log("h x w x c --- input image {} transformed to {} with scaling {:0.2f}, {:0.2f}".format(self.I.shape, (
         # options['h'], options['w'], 3), *self.scaling.values()))
 
-        blur = resized_image[:,:,1]
+        blur = resized_image[:,:,2]
         self.show(blur,"BlurredImage_beforeGauss.jpg")
-        blur = cv2.GaussianBlur(blur, (3, 3), 1.4)
+        blur = cv2.GaussianBlur(blur, (5, 5), 1.4)
 
         # polyline transformation to produce numpy pixel masks
         np_bg_mask = np.zeros((options['h'], options['w']), np.uint8)
